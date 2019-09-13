@@ -3,15 +3,16 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route
 
-class IndexController extends AbstractController
+class IndexController
 {
+
     public function index()
     {
        	return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        ]);
+            '<html><body><h1>Booking App index page</h1></body></html>'
+        );
     }
 }
 
